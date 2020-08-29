@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backImage {
+    background-color: #ddeff1;
+    height: 200vh;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.backImage img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 115vh;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl-100';
+    src: url(MuseoSans/MuseoSansCyrl-100.woff);
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl-300';
+    src: url(MuseoSans/MuseoSansCyrl-300.woff);
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl-500';
+    src: url(MuseoSans/MuseoSansCyrl-500.woff);
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl-700';
+    src: url(MuseoSans/MuseoSansCyrl-700.woff);
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl-900';
+    src: url(MuseoSans/MuseoSansCyrl-900.woff);
+}
+
+body {
+    font-family: 'Museo Sans Cyrl-500';
+    display: flex;
+    justify-content: center;
+}
+
+.logo-menu {
+    width: 30%;
+}
+
+.top {
+    font-size: 12px;
+    height: 75px;
+    color: black;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: baseline;
+    line-height: 5;
+    z-index: 2;
+}
+
+
+.logo-menu>ul {
+    display: flex;
+
+}
+
+ul li {
+    list-style: none;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+ul .logo {
+    padding-right: 15px;
+}
+
+ul li>a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Museo Sans Cyrl-500';
+}
+
+.container {
+    width: 60%;
+    position: absolute;
+    top: 0;
+}
+
+.login {
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 40px;
+    color: #ffd630;
+    background-color: #ddeff1;
+    box-shadow: 5px 26px 79px -8px rgba(0, 0, 0, 0.5);
+}
+
+.registration {
+    width: 120px;
+}
+
+.registration,
+.start {
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    background-color: #ffd630;
+    position: relative;
+    box-shadow: 5px 26px 79px -8px rgba(0, 0, 0, 0.5);
+}
+
+.language {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.language option {
+    color: black;
+    background-color: transparent;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.info {
+    width: 70%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+}
+
+.info h1 {
+    font-family: 'Museo Sans Cyrl-900';
+    color: #001421;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.info p,
+.about p,
+.thirdSection p,
+.fourthSection p {
+    padding: 10px 0;
+    color: #8fafba;
+    font-family: 'Museo Sans Cyrl-300';
+    font-size: 13px;
+    width: 80%;
+    line-height: 1.7;
+}
+
+.start {
+    width: 150px;
+    top: 20px;
+}
+
+.down span {
+    content: url(Images/down-arrow.svg);
+    font-size: 15px;
+    height: 15px;
+    color: #ffd630;
+}
+
+.down {
+    position: relative;
+    top: 70px;
+    padding: 20px;
+}
+
+.classes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail {
+    width: 24%;
+    height: 80px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px 10px;
+    justify-content: space-around;
+    display: flex;
+    box-shadow: 5px 19px 56px -21px rgba(0, 0, 0, 0.54);
+}
+
+.foto {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    display: block;
+    box-shadow: 5px 19px 56px -13px rgba(0, 0, 0, 0.54);
+}
+
+.foto img {
+    box-shadow: 19px 26px 53px -4px rgba(0, 0, 0, 0.5);
+}
+
+.more span {
+    padding: 7px;
+    height: 25px;
+    width: 25px;
+    border-radius: 14px;
+    content: url(Images/next.png);
+    background-color: #def0f2;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.more p {
+    font-size: 10px;
+    font-family: 'Museo Sans Cyrl-300';
+}
+
+.more .category {
+    font-size: 13px;
+    font-family: 'Museo Sans Cyrl-500';
+}
+
+.detail:hover,
+.detail:focus {
+    background-color: #ffd630;
+}
+
+.more span:hover {
+    background-color: black;
+}
+
+.goal {
+    width: 48%;
+    height: max-content;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0 30px 30px;
+    margin: 0 0 12px 0;
+
+}
+
+.goalBox {
+    position: relative;
+    padding: 50px 0 0px;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 400px; */
+    top: 70px;
+    justify-content: space-between;
+    font-family: 'Museo Sans Cyrl-300';
+    font-size: 14px;
+}
+
+.goalBox p {
+    font-family: 'Museo Sans Cyrl-300';
+    color: #4e6169;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.title {
+    border-left: 4px solid #ffd630;
+    position: relative;
+    height: fit-content;
+    font-size: 25px;
+    padding-left: 15px;
+    font-family: 'Museo Sans Cyrl-300';
+}
+
+.circle {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    background-color: #ffd630;
+    border-radius: 23px;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    font-family: 'Museo Sans Cyrl-700';
+    padding: 10px;
+    font-size: 20px;
+}
+
+.about {
+    width: 47%;
+}
+
+.thirdSection,
+.fourthSection {
+    display: flex;
+    position: relative;
+    top: 60px;
+    padding-top: 60px;
+}
+
+
+.fourthSection {
+    flex-direction: column;
+}
+
+.secondSection .title {
+    top: 50px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.encouragementBox {
+    width: 47%;
+}
+
+.encouragementBox,
+.topicBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.encouragement {
+    width: 45%;
+    height: 170px;
+}
+
+.encouragement,
+.topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.topic {
+    width: 32%;
+    margin: 30px 10px 0 0;
+}
+
+.encouragement span {
+    content: url(images/130188.png);
+    height: 50px;
+    width: 50px;
+    background-color: #def0f2;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.topic span {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: #def0f2;
+    padding: 13px;
+    border-radius: 12px;
+    color: white;
+    font-size: 29px;
+}
+
+.box {
+    position: relative;
+    top: 20px;
+}
+
+@media all and (max-width: 1030px) {
+    .container {
+        width: 70%;
+    }
+
+    .topic {
+        width: 30%;
+    }
+
+    .registration {
+        width: 40%;
+    }
+    .thirdSection {
+        top: 100px;
+    }
+}
+
+@media all and (max-width: 1030px) {
+    .container {
+        width: 85%;
+    }
+
+    .actions {
+        width: 55%;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .backImage {
+        height: 220vh;
+    }
+}
+
+@media all and (max-width: 740px) {
+    .backImage img {
+        display: none;
+    }
+
+    .info h1 {
+        font-size: 34px;
+        padding-top: 30px;
+    }
+
+    .registration {
+        width: 20%;
+    }
+
+    .actions {
+        width: 90%;
+        justify-content: space-around;
+    }
+    .info {
+        width: 95%;
+    }
+    .classes {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .detail {
+        width: 45%;
+        margin: 0 0 15px;
+    }
+    .more .category {
+        font-size: 14px;
+    }
+    .more p{
+        font-size: 13px;
+    }
+    .backImage {
+        height: 245vh;
+    }
+    .goalBox {
+        padding: 35px 0 0px;
+    }
+    .goal{
+        margin: 0 0 12px 0;
+    }
+}
+@media all and (max-width: 550px) {
+    .logo img{
+        height: 50px;
+    }
+    .registration {
+        width: 40%;
+    }
+    .container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+    .encouragement span {
+        height: 45px;
+        width: 45px;
+    }
+     h4{
+        font-size: 13px;
+    }
+    .backImage {
+        height: 275vh;
+    }
+    .thirdSection {
+        flex-direction: column;
+    }
+    .encouragementBox,.topicBox {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .about {
+        width: 100%;
+        flex-direction: column;
+    }
+    .topic, .encouragement {
+        width: 45%;
+        align-items: center;
+    }
+    .encouragement{
+        height: 170px;
+    }
+}
+@media all and (max-width: 550px) {
+    .info h1 {
+        font-size: 25px;
+    }
+    .logo img {
+        height: 35px;
+        position: absolute;
+        bottom: 60px;
+    }
+    .classes {
+        justify-content: center;
+    }
+    .detail {
+        width: 90%;
+    }
+    .goal {
+        width: 90%;
+    }
+    .goalBox {
+        flex-direction: column;
+    }
+    .backImage {
+        height: 325vh;
+    }
+    .encouragement, .topic {
+        width: 90%;
+        height: auto;
+    }
+    .encouragementBox,.topicBox {
+        width: 100%;
+        justify-content: center;
+    }
+}
